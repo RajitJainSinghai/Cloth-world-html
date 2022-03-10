@@ -111,6 +111,79 @@ img#tag {
   background-color: #333;
   overflow: hidden;
 }
+hr#footer-hr {
+  margin: 10px 10px 15px;
+}
+p#right-reserved {
+  color: #aeaeae;
+  margin: 35px;
+  font-size: 18px;
+}
+p#footer-email {
+  font-family: popins;
+  font-size: 18px;
+}
+/********************** SIgnup *****************************/
+section.popup {
+  background-color: rgba(0, 0, 0, 0.06);
+  top: 0;
+  bottom: 0;
+  height: 60vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+.popup-inner {
+  background-color: white;
+  width: 30%;
+  height: 45vw;
+  margin: auto;
+}
+p.createHeading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-family: poppins;
+}
+p.signUpParagraph {
+  text-align: center;
+  margin: 20px;
+  font-family: poppins;
+  color: #7d7d7d;
+}
+.popup-input {
+  text-align: center;
+}
+input#inputBox {
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+input#checkBox {
+  width: 25px;
+}
+.checkBoxDiv {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+button.signUpButton {
+  padding: 20px 60px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #efca00;
+  margin: 15px;
+}
+a.loginLink {
+  color: black;
+  font-family: poppins;
+  text-decoration: none;
+  font-weight: 300;
+}
 
 @media screen and (max-width: 1300px) {
   img#lines {
