@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: poppins;
 }
+/**************** Header ****************/
 header {
   display: flex;
   justify-content: space-between;
@@ -44,6 +46,7 @@ a#Home {
   color: black;
   font-size: 18px;
 }
+/************************* Home page ************************/
 img.backgroundImg {
   width: 100%;
   margin-bottom: 30px;
@@ -111,6 +114,7 @@ img#tag {
   background-color: #333;
   overflow: hidden;
 }
+/************** Footer ********************/
 hr#footer-hr {
   margin: 10px 10px 15px;
 }
@@ -123,12 +127,13 @@ p#footer-email {
   font-family: popins;
   font-size: 18px;
 }
+
 /********************** SIgnup *****************************/
 section.popup {
   background-color: rgba(0, 0, 0, 0.06);
   top: 0;
   bottom: 0;
-  height: 60vw;
+  height: 100vh;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -138,7 +143,7 @@ section.popup {
 }
 .popup-inner {
   background-color: white;
-  width: 30%;
+  width: 40%;
   height: 45vw;
   margin: auto;
 }
@@ -184,8 +189,40 @@ a.loginLink {
   text-decoration: none;
   font-weight: 300;
 }
+a.loginLink:hover {
+  color: rgb(120, 121, 87);
+}
+/********************** KidsWear **************************/
+button#addButton {
+  background-color: #efca00;
+  border: 0;
+  padding: 7px 28px;
+  border-radius: 10px;
+}
+.cart {
+  width: 80%;
+  margin: 15px;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+li.menu {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+img.image {
+  width: 100%;
+}
+
+/********************** Media Screen *********************/
 
 @media screen and (max-width: 1300px) {
+  .popup-inner {
+    background-color: white;
+    width: 40%;
+    height: 65vw;
+  }
   img#lines {
     display: inline;
     margin-left: 20px;
@@ -220,7 +257,37 @@ a.loginLink {
     display: none;
   }
 }
+
+@media screen and (max-width: 900px) {
+  li.menu {
+  display: grid;
+  grid-template-columns: 34% 34% 34%;
+}
+  p.createHeading {
+    font-size: 16px;
+  }
+  p.signUpParagraph {
+    font-size: 13px;
+  }
+
+  input#inputBox {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+  .popup-inner {
+    width: 50vh;
+    height: 80vh;
+  }
+}
 @media screen and (max-width: 600px) {
+    li.menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+  .popup-inner {
+    width: 50vh;
+    height: 85vh;
+  }
   .searchBar {
     display: none;
   }
