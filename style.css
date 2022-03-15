@@ -192,6 +192,15 @@ a.loginLink {
 a.loginLink:hover {
   color: rgb(120, 121, 87);
 }
+.cart1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 29px 90px;
+}
+p#size {
+  margin: 10px;
+}
+
 /********************** KidsWear **************************/
 button#addButton {
   background-color: #efca00;
@@ -215,6 +224,121 @@ img.image {
   width: 100%;
 }
 
+/************** Cart ********************/
+hr#hr2 {
+  border: 1px solid #707070;
+  margin-top: 40px;
+}
+.cartPage {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+.box {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  background-color: #f2f2f2;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+  width: 0;
+}
+img#user1 {
+  width: 80%;
+}
+button#countButton {
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  border: 0;
+  border-radius: 20px;
+}
+tr#cart1 {
+  background-color: #f2f2f2;
+}
+button#cancel {
+  height: 20vw;
+  width: 8vw;
+  border: 0;
+  background-color: red;
+  float: right;
+}
+
+.subtotal {
+  float: right;
+  margin: 20px;
+}
+p#tag {
+  font-size: 45px;
+}
+button#checkOutButton {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #efca00;
+  border: 0;
+  border-radius: 10px;
+}
+.subtotal {
+  float: right;
+  margin: 40px;
+  width: 100%;
+  position: relative;
+  text-align: end;
+}
+img#cancelImg {
+  width: 60%;
+}
+/************* Shipping**************************************/
+.shipping {
+  margin: 50px;
+  width: 50%;
+}
+h2#shipment {
+  font-size: 24px;
+  font-weight: lighter;
+}
+p#detail {
+  font-size: 13px;
+  font-weight: 400;
+}
+tr#name {
+  font-size: 13px;
+  font-weight: 400;
+}
+tr#totalPrice {
+  border-top: 1px solid #afafaf;
+  font-size: 19px;
+  font-weight: 400;
+}
+p#fullName {
+  font-size: 19px;
+  font-weight: 400;
+}
+input#input {
+  padding: 10px 20px;
+  width: 50%;
+  border-radius: 30px;
+  border: 1px solid grey;
+}
+ul.container {
+  margin: 20px;
+  list-style-type: none;
+}
+li {
+  margin: 35px;
+}
+
+/************** Thank you **********************/
+h1#thankyouHeading {
+  margin: 50px;
+}
 /********************** Media Screen *********************/
 
 @media screen and (max-width: 1300px) {
@@ -260,9 +384,9 @@ img.image {
 
 @media screen and (max-width: 900px) {
   li.menu {
-  display: grid;
-  grid-template-columns: 34% 34% 34%;
-}
+    display: grid;
+    grid-template-columns: 34% 34% 34%;
+  }
   p.createHeading {
     font-size: 16px;
   }
@@ -280,10 +404,20 @@ img.image {
   }
 }
 @media screen and (max-width: 600px) {
-    li.menu {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
+  .shipping {
+    margin: 40px;
+    width: 100%;
+  }
+  ul.container {
+    margin: 0;
+  }
+  input#input {
+    width: 100%;
+  }
+  li.menu {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
   .popup-inner {
     width: 50vh;
     height: 85vh;
